@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 * {
     font-size: 14px;
 }
 body {
     margin: 1%;
 }
+
+/*---------ESTILOS SECCION FOTO---------*/
+
+.section-foto{
+    border: 1px solid red;
+}
+
+    .izquierda-foto{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    .derecha-foto{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+        .inferior2{
+            border: 1px soli red;
+            display: flex;
+            flex-direction: row;
+        }
+            .texto1{
+                background-color: gray;
+            }
+            .texto2{
+                background-color: rgb(73, 72, 72);
+            }

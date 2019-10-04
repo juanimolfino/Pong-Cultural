@@ -3,10 +3,12 @@
 * {
     font-size: 14px;
     font-family: Darker Grotesque;
+    color: rgba(0, 0, 0, 0.85);
 }
 body {
     margin: 0;
 }
+
 
 /* NAV */
 
@@ -30,6 +32,12 @@ nav div ul li button:hover::before {
 }
 /* FIN BOTON */
 
+
+.contenedor-musica {
+    margin: 0 1%;
+}
+
+
 /* SECCIONES */
 nav div ul li a b {
     text-decoration: none;
@@ -41,8 +49,9 @@ nav div ul li a b:hover {
 }
 nav div ul li a {
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     font-size: 1.4em;
+    font-weight: 500;
 }
 nav div ul li a:hover {
     color: rgb(240, 41, 55);
@@ -67,7 +76,7 @@ nav div {
     
 }
 nav {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
    position: fixed;
    top: 0;
    width: 100%;
@@ -89,33 +98,31 @@ nav {
 .boton-conocer button {
     background: #4858ef;
     color: white;
-    font-weight: 300;
+    font-weight: 600;
     width: 190px;
     height: 190px;
     border-radius: 50%;
     font-size: 1.5em;
     border: 0;
-    
+    cursor: pointer; 
 } 
 .boton-conocer button:hover {
-    width: 150px;
-    height: 150px;
-    transition-duration: 1s;
-    transform: translate(5px, 2px);
-   margin: auto 0;
+    transform: scale(0.8, 0.8);
+    transition-duration: 1s;  
+    font-weight: 600;
+    font-size: 1.9em;
 }
 .invisible {
     width: 10px;
     background: transparent;
 }
 
+/* FIN BOTON CONOCER */
 
 
 
 
-
-
-/* SECCION MUSICA */
+/* SECCION MUSICA - GENERAL */
 main section .contenedor-musica {
     display: block;
 }
@@ -140,9 +147,9 @@ main section .contenedor-musica {
 }
 
 
-/* ARTICULO TITULO SECCION */
+/* ARTICULO TITULO SECCION (60% BLOQUE 1)*/
 .titulo h1{
-    font-size: 13em;
+    font-size: 15em;
     font-weight: 500;
     width: 100%;
     margin: 0 10px;
@@ -154,15 +161,16 @@ main section .contenedor-musica {
 }
 
 .contenedor-comentario {
-    display: flex;
+   
+    display: block;
 }
 
-.blanco {
-    flex: 30%;
-}
+
 .comentario {
-    flex: 70%;
-}
+    
+    padding-left: 30%;
+    
+} 
 
 .comentario p {
     font-size: 2.2em;
@@ -170,6 +178,7 @@ main section .contenedor-musica {
     line-height: 30px;
     margin-bottom: 15px;
     margin-top: 0;
+    margin-left: 5px;
 }
 .comentario .by {
     font-size: 1.5em;
@@ -203,6 +212,9 @@ main section .contenedor-musica {
     line-height: 30px;
     margin: 3%;
 }
+.info-noticia a {
+    text-decoration: none;
+}
 
 /* FIN NOTICIA 40% 1 */
 
@@ -228,7 +240,9 @@ main section .contenedor-musica {
 
 
 
-@media (max-width: 600px) {
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
     .bloque {
         flex-direction: column;
     }
@@ -238,6 +252,7 @@ main section .contenedor-musica {
     }
     .noticia-sesenta {
         flex-direction: column;
+        margin: 0;
     }
     .secciones {
         display: none !important;
@@ -276,22 +291,43 @@ main section .contenedor-musica {
     nav div ul li a b {
         color: rgb(240, 41, 55);
     }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
 }
 
 
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 700px) and (max-width: 800px) {
 
     .bloque {
         flex-direction: column;
     }
-    img {
-        margin-top: 20px;
+
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
     }
-    .cuarenta img {
-        margin-left: 5%;
+    
+    .imagen-noticia {
+        margin: 0 auto;
     }
 
+    .noticia-sesenta {
+        margin: 0;
+    }
+
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    .sesenta {
+        margin-bottom: 15px;
+    }
+    .cuarenta {
+        margin-bottom: 10px;
+    }
+    nav {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1150px) {
@@ -311,6 +347,15 @@ main section .contenedor-musica {
     .imagen-noticia {
         margin-top: 15px;
     }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
+    }
 
 }
 
@@ -318,6 +363,7 @@ main section .contenedor-musica {
 
     .noticia-sesenta {
         flex-direction: column;
+        margin: 0;
     }
     .noticia-sesenta .info-noticia {
         flex-direction: row;
@@ -328,7 +374,16 @@ main section .contenedor-musica {
         padding: 0;
         align-self: flex-start;
     }
-
+  
+    .cuarenta .imagen-noticia {
+        margin: auto 0;
+    }
     
+    .sesenta .imagen-noticia {
+        margin: 0 auto;
+    }
+    .titulo h1 {
+        margin: 0;
+    }
 }
 

@@ -1,6 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 * {
     font-size: 14px;
+    font-family: Darker Grotesque;
+    color: rgba(0, 0, 0, 0.85);
 }
 body {
-    margin: 1%;
+    margin: 0;
 }
+
+
+/* NAV */
+
+/* BOTON hamburguesa */
+nav div ul li button {
+   background: transparent;
+   border: 0;
+   margin-top: 5px;   
+}
+nav div ul li button::before {
+   background: transparent;
+   border: 0;
+   content: "\f0c9";
+   font-family: FontAwesome;
+   font-style: normal;
+   font-size: 1.4em;
+   color: black;
+}
+nav div ul li button:hover::before {
+    color: rgb(240, 41, 55);
+}
+/* FIN BOTON */
+
+
+.contenedor-musica {
+    margin: 0 1%;
+}
+
+
+/* SECCIONES */
+nav div ul li a b {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+nav div ul li a b:hover {
+    color: rgb(240, 41, 55);
+}
+nav div ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+nav div ul li a:hover {
+    color: rgb(240, 41, 55);
+}
+nav div ul li {
+    list-style: none;
+}
+nav div ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+/* FIN SECCIONES */
+
+
+/* NAV GENERAL */
+nav div {
+    display: block;
+    margin: 0 3%;
+    
+}
+nav {
+   margin-bottom: 20px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 4;
+   background: rgba(255, 255, 255, 0.9);
+}
+
+/* FIN NAV GENERAL */
+
+
+/* BOTON CONOCE MAS */
+
+.boton-conocer {
+    display: flex;
+    justify-content: space-around;
+    height: 190px;
+}
+
+.boton-conocer button {
+    background: #4858ef;
+    color: white;
+    font-weight: 600;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    border: 0;
+    cursor: pointer; 
+} 
+.boton-conocer button:hover {
+    transform: scale(0.8, 0.8);
+    transition-duration: 1s;  
+    font-weight: 600;
+    font-size: 1.9em;
+}
+.invisible {
+    width: 10px;
+    background: transparent;
+}
+
+/* FIN BOTON CONOCER */
+
+
+
+
+/* SECCION MUSICA - GENERAL */
+main section .contenedor-musica {
+    display: block;
+}
+
+.bloque {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bloque:nth-of-type(1) {
+    margin-top: 50px;
+}
+
+.sesenta {
+    flex: 60%;
+    
+} 
+.cuarenta {
+    flex: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ARTICULO TITULO SECCION (60% BLOQUE 1)*/
+.titulo h1{
+    font-size: 15em;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 10px;
+    
+}
+.titulo h1:hover {
+    color: rgb(240, 41, 55);
+    cursor: pointer;
+}
+
+.contenedor-comentario {
+   
+    display: block;
+}
+
+
+.comentario {
+    
+    padding-left: 30%;
+    
+} 
+
+.comentario p {
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 0;
+    margin-left: 5px;
+}
+.comentario .by {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: gray;
+    text-align: end;
+    margin-right: 5%;
+    margin-top:0;
+}
+/* FIN ARTICULO SECCION */
+
+/* NOTICIA 40% 1 */
+.info-noticia {
+    display: flex;
+}
+.titulo-noticia {
+    flex: 40%;
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 3%;
+}
+.titulo-noticia:hover {
+    color: rgb(240, 41, 55);
+    cursor: pointer;
+}
+.extra-noticia {
+    flex: 40%;
+    font-size: 1.4em;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 3%;
+}
+.info-noticia a {
+    text-decoration: none;
+}
+
+/* FIN NOTICIA 40% 1 */
+
+/* NOTICIA SESENTA ABAJO */
+
+.noticia-sesenta {
+    display: flex;
+}
+
+.noticia-sesenta .info-noticia {
+    flex-direction: column;
+}
+
+.noticia-sesenta .info-noticia .extra-noticia {
+    align-self: flex-end;
+}
+
+.noticia-sesenta {
+    margin-left: 3%;
+}
+
+/* FIN NOTICIA SESENTA ABAJO */
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    .bloque {
+        flex-direction: column;
+    }
+    .bloque:nth-of-type(1) {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .noticia-sesenta {
+        flex-direction: column;
+        margin: 0;
+    }
+    .secciones {
+        display: none !important;
+    }
+    .titulo h1 {
+        font-size: 8em;
+        margin: 0 5px;
+    }
+    .comentario p {
+        font-size: 1.5em;
+    }
+    .comentario .by {
+        font-size: 1em;
+    }
+
+    .titulo-noticia {
+        font-size: 1.5em;
+    }
+    .extra-noticia {
+        display: none;
+    }
+    .imagen-noticia img {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .titulo-noticia {
+        margin: 10px auto;
+    }
+
+    .boton-conocer button {
+       display: none;
+    } 
+    .boton-conocer {
+        display: none;
+    }
+    nav div ul li a b {
+        color: rgb(240, 41, 55);
+    }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+}
+
+
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+    .bloque {
+        flex-direction: column;
+    }
+
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
+    }
+    
+    .imagen-noticia {
+        margin: 0 auto;
+    }
+
+    .noticia-sesenta {
+        margin: 0;
+    }
+
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    .sesenta {
+        margin-bottom: 15px;
+    }
+    .cuarenta {
+        margin-bottom: 10px;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1150px) {
+
+    .bloque {
+        flex-direction: column;
+    }
+    
+    .cuarenta {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .info-noticia {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-noticia {
+        margin-top: 15px;
+    }
+    .contenedor-musica {
+        margin: 0 5%;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+    .bloque:nth-of-type(1) {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+
+    .noticia-sesenta {
+        flex-direction: column;
+        margin: 0;
+    }
+    .noticia-sesenta .info-noticia {
+        flex-direction: row;
+    }
+    
+    .cuarenta .info-noticia {
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+  
+    .cuarenta .imagen-noticia {
+        margin: auto 0;
+    }
+    
+    .sesenta .imagen-noticia {
+        margin: 0 auto;
+    }
+    .titulo h1 {
+        margin: 0;
+    }
+}
+

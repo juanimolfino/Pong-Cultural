@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,66 @@
     <link rel="stylesheet" href="animate.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+<body> 
 
        
     <!-- BARRA NAVEGACION - JUANI -->
     <nav>
         <div>
             <ul>
-                <li><a href=""><b>Pong Cultural</b></a></li>
+                <li><a href="index.html"><b>Pong Cultural</b></a></li>
                 <li class="secciones"><a href="">Música</a></li>
                 <li class="secciones"><a href="">Literatura</a></li>
                 <li class="secciones"><a href="">Fotografía</a></li>
                 <li>
                     <label>
-                        <button style="cursor: pointer"></button>
+                        <button style="cursor: pointer" onClick="mostrarmenu()"></button>
                     </label>
                 </li>
             </ul>
         </div>
     </nav>
+    <!-- NAV OCULTO -->
+    <div id="hamburguesa" class="menu-oculto" >        
+        <i class="fa fa-times fa-5x" onClick="ocultarmenu()"></i>
+        <div class="contenedor-menu">
+            <div class="menu-superior">    
+                <div class="izquierda-20">
+                    <div class="brand"></div>
+                    <div class="ingresar"></div>
+                    <div class="registrarme"></div>
+                </div>
+
+                <div class="medio-40">
+                    <div class="frase-menu"></div>
+                    <div class="mi-cuenta"></div>
+                    <div class="formulario-menu"></div>
+                </div>
+                <div class="derecha-40">
+                    <div class="menu-principal"></div>
+                    <div class="conocenos"></div>
+                    <div class="contacto"></div>
+                    <div class="mas"></div>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div> 
+        </div>
+
+        
+    </div>
+    <!-- FIN - NAV OCULTO -->
+
+
+
+
     <!-- FIN BARRA NAVEGACION -->
 
     <!-- HEADER / BANNER - MARIETTA -->
@@ -45,7 +85,7 @@
 
                 <div class="bloque">
                     <article class="sesenta">
-                        <div class="titulo"><h1>Música</h1></div>
+                        <div class="titulo"  data-aos="fade-up"><h1>Música</h1></div>
                         <div class="contenedor-comentario">                 
                             <div class="comentario">
                                 <p>"El mensaje es ese, cuidá al que tenes al lado. Es tu amigo, puede ser tu hermano, tu novia... lo que sea pero cuidá, cuidá la vida."</p>
@@ -53,7 +93,10 @@
                             </div>  
                         </div>
 
-                        <div class="boton-conocer">
+                        <div class="boton-conocer" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="1000">
                             <button>Conocer más</button>
                             <div class="invisible"></div>
                         </div>                
@@ -86,7 +129,7 @@
                         </div>
                         <div class="info-noticia">    
                             <div> 
-                                <a href=""><p class="titulo-noticia">
+                                <a href=""><p class="titulo-noticia" data-aos="fade-right">
                                     13 años de 'Ahi vamos': adentro de la grabación del último disco de Gustavo Cerati
                                 </p></a>
                                 
@@ -108,7 +151,7 @@
                             </div>
                             <div class="info-noticia">    
                                 <div>
-                                    <a href="noticia.html"><p class="titulo-noticia">
+                                    <a href="noticia.html"><p class="titulo-noticia" data-aos="fade-left">
                                             Las primeras imágenes inéditas de Spinetta en el documental de National Geographic
                                     </p></a>
                                 </div>
@@ -124,6 +167,7 @@
             </div>            
         </section>
     <!-- FIN MUSICA -->
+    
 
 
     <!-- MARIETTA LITERATURA -->
@@ -198,6 +242,7 @@
 </section>
     <!-- FIN FOTOGRAFIA -->
     </main>
+
 <br>
 <br>
 <hr>
@@ -242,9 +287,11 @@
 
 
     <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script>new WOW().init();</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="jshome.js"></script>
+
 
 </body>
 </html>

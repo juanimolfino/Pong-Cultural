@@ -238,9 +238,262 @@ main section .contenedor-musica {
 
 /* FIN NOTICIA SESENTA ABAJO */
 
+/* foto LARA-----------------------------------*/
+.section-foto{
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.contenedor-foto1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+    .izquierda-foto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;     
+    }
+
+    
+        .izquierda-foto .superior1{
+            width: 100%;
+            display: block;     
+        }
+.wow  {
+                font-family: 'Roboto', sans-serif;
+                font-size: 10em;
+                float: left;
+                transition-duration: 1s;
+}  
+       
+            .izquierda-foto .wow:hover{
+                transform: translateX(10px);
+                transition-duration: 1s;
+                
+            }
+        /*inferior1*/
+
+        .izquierda-foto .inferior1{
+            width: 100%;
+            } 
+
+            .izquierda-foto .subtitulo{
+                color: gray;
+                padding-left: 25%;
+                padding-bottom: 1%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 2em;
+                transition-duration: 1s;
+            }
+            .izquierda-foto .subtitulo:hover{
+                transform: translateX(10px);
+                transition-duration: 1s;
+                
+            }
+            .izquierda-foto .parrafos{     
+                display: flex;
+                padding-left: 25%;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
+            
+            }
+            .izquierda-foto p{
+                width: 50%;
+                margin: 1%;
+            }
+            .izquierda-foto .inferior1 .parrafos a{
+                text-decoration: none;
+            }
+
+
+    .derecha-foto{
+        width:30%;                           
+        display: flex;
+        flex-direction: column;
+        }
+        .derecha-foto .superior2 img{
+            width: 100%;
+           
+        }
+
+        .derecha-foto .inferior2{
+            display: flex;
+            flex-direction: row;
+        }
+            .derecha-foto .texto1{
+                color: grey;
+                font-family: 'roboto';
+                font-size: 2em;
+                margin: 2%;
+            }
+            .derecha-foto .texto2{
+                font-family: 'roboto';
+                font-size: 1em;
+                margin: 1%;
+                
+            }
+.contenedor-foto2 {
+    width: 100%;
+     
+}
+.caja1{
+    margin-top:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.contenedor-foto2 .caja1 p{
+    color: grey;
+    width: 20%;
+    font-family: 'roboto';
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 1%;
+    
+}
+.contenedor-foto2 .caja1 h2{
+    font-family: 'roboto';
+    font-size: 2em;
+    width: 40%;
+    font-weight: lighter;
+    transition: 1s;
+    
+}
+.contenedor-foto2 .caja1 h2:hover{
+                transform: translateX(10px);
+                transition: 1s;
+                
+            }
+
+        .contenedor-foto2 button{
+        margin-right: 5%;
+        margin-left: 5%;
+      
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        border: 0px;
+        background: red;
+        color: white;
+        
+      
+        
+    }
+    .contenedor-foto2 button:hover{
+        transform: scale(0.7,0.7);
+        transition: 1s;
+        
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        margin-top: 5%;
+        margin-left: 5%;
+        
+    }
+    footer h3{
+        font-size: 1.5em;
+        margin: 0%;
+    }
+
+    footer div{
+        width: 25%;
+    
+       
+    }
+    footer li{
+        list-style:none;
+    }
+   
+    footer ul{
+        padding: 0%;
+    }
+
+    footer li a{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    footer li a:hover{
+        color: red;
+    }
+    footer .foot-div-3{
+        background-color: rgb(116, 114, 114);
+        padding: 0%;
+    }
+    footer .foot-div-4 {
+        margin-left: 2%;
+        
+    }
+    footer .foot-div-4 div {
+        margin: 2%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    footer .boton-submit{
+        border: 0px;
+        background-color: blue;
+        color: white;
+    }
+    footer input{
+        width: 300px;
+        height: 50px;
+        border: 0px;
+    }
+
+  
+
+    /*fin seccion fotografia lara--------------------*/
 
 
 /* RESPONSIVE */
+/*responsive lara-------*/
+
+@media (max-width: 600px){
+    .contenedor-foto1{
+    flex-direction: column;
+    }
+    .izquierda-foto{
+        width: 100%;
+    }
+    .izquierda-foto .parrafos{
+        flex-direction: column;
+        padding:0%;
+    }
+    .izquierda-foto .p{
+        width: 100%;
+    }
+    .caja1{
+        flex-direction: column;
+    }
+    .derecha-foto{
+        width: 100%;
+    }
+    .derecha-foto .inferior2{
+        width:100%;
+        flex-direction: column;
+    }
+    .contenedor-foto2 .caja1 h2{
+        width:100%;
+    }
+    .contenedor-foto2 button{
+        width:100px;
+        height: 100px;
+    }
+    .contenedor-foto2 .caja1 p{
+        width: 100%;
+    }
+}
+
+
+
+/*fin responsive lara*/
 
 @media (max-width: 700px) {
     .bloque {
@@ -294,6 +547,8 @@ main section .contenedor-musica {
     .contenedor-musica {
         margin: 0 5%;
     }
+        
+    
 }
 
 

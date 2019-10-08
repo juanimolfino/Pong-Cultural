@@ -5,8 +5,15 @@
     font-family: Darker Grotesque;
     color: rgba(0, 0, 0, 0.85);
 }
+html {
+    overflow-x: hidden;
+}
 body {
     margin: 0;
+    
+}
+.htmlclass {
+    overflow-y: hidden;
 }
 
 
@@ -93,6 +100,7 @@ nav {
     display: flex;
     justify-content: space-around;
     height: 190px;
+    
 }
 
 .boton-conocer button {
@@ -104,11 +112,12 @@ nav {
     border-radius: 50%;
     font-size: 1.5em;
     border: 0;
-    cursor: pointer; 
+    cursor: pointer;
+    transition: 1s transform, 1s font-weight, 1s font-size; 
 } 
 .boton-conocer button:hover {
     transform: scale(0.8, 0.8);
-    transition-duration: 1s;  
+    transition-duration: 0.4s;  
     font-weight: 600;
     font-size: 1.9em;
 }
@@ -387,3 +396,36 @@ main section .contenedor-musica {
     }
 }
 
+
+/* NAV OCULTO */
+#hamburguesa {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0; 
+   /*  transition: transform ease-out 700ms; */
+    z-index: 4;
+}
+.menu-oculto {
+    transform: translateX(100vw);
+   /*  transform: translateY(50%) translateX(50%); */
+    display: block;
+    
+    
+    
+}
+.menu-activo {
+    transform: translateX(0);
+    background: rgb(240, 41, 55);
+    /* overflow-y:hidden; */   /* PORQUE NO FUNCIONA?????????????????????????????????????????????? */
+   overflow-y: hidden !important;
+}
+#hamburguesa i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2%;
+    margin-top: 0.05%;    
+    cursor: pointer;
+}

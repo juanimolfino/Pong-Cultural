@@ -4,6 +4,7 @@
     font-size: 14px;
     font-family: Darker Grotesque;
     color: rgba(0, 0, 0, 0.85);
+    /* overflow-x: hidden; */
 }
 html {
     overflow-x: hidden;
@@ -14,6 +15,7 @@ body {
 }
 .htmlclass {
     overflow-y: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -247,6 +249,8 @@ main section .contenedor-musica {
 
 /* FIN NOTICIA SESENTA ABAJO */
 
+/* SECCION FOTOGRAFIA */
+
 /* foto LARA-----------------------------------*/
 .section-foto{
     margin-top: 100px;
@@ -270,7 +274,8 @@ main section .contenedor-musica {
             width: 100%;
             display: block;     
         }
-.wow  {
+
+        .wow  {
                 font-size: 10em;
                 float: left;
                 transition-duration: 1s;
@@ -454,7 +459,7 @@ main section .contenedor-musica {
 
   
 
-    /*fin seccion fotografia lara--------------------*/
+/*fin seccion fotografia lara--------------------*/
 
 
 /* RESPONSIVE */
@@ -513,6 +518,7 @@ main section .contenedor-musica {
 
 /*fin responsive lara*/
 
+/* RESPONSIVE JUANI */
 @media (max-width: 700px) {
     .bloque {
         flex-direction: column;
@@ -631,7 +637,76 @@ main section .contenedor-musica {
         margin-top: 0;
     }
 
+    
+
 }
+
+/* hamburguesa  RESPONSIVE*/
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .menu-superior .izquierda-20 .registrarme a button {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .medio-40 {
+        margin-left: 15%;
+    }
+    .menu-superior .izquierda-20 .ingresar h6 {
+        margin-top: 60% !important;
+    }
+    .menu-superior .derecha-40 {
+        flex: 30% !important;
+    }
+    .menu-superior .derecha-40 h3 {
+        font-size: 4em !important;
+        
+    }
+    .menu-superior .derecha-40 h6 {
+        
+        margin-top: 40% !important;
+    }
+    .contenedor-mas-contenido {
+        margin-right: 30%;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .menu-superior .derecha-40 h3 {
+        font-size: 2em !important;
+        
+    }
+    .menu-superior .izquierda-20 .registrarme a button {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .menu-superior .izquierda-20 .ingresar h6 {
+        margin-top: 310px !important;
+    }
+    .menu-superior .derecha-40 h6 {
+        
+        margin-top: 80px !important;
+    }
+    .contenedor-mas-contenido {
+        margin-right: 0 !important;
+        width: 50% !important;
+    }
+    .menu-superior .medio-40 form input {
+        width: 240px !important;
+    }
+    input[type="checkbox" i] {
+        display: none !important;
+    }
+    span {
+        display: none;
+    }
+    #contenedor-menu {
+        margin: 1% !important;
+    }
+}
+
+
 
 @media (min-width: 1150px) and (max-width: 1300px) {
 
@@ -662,6 +737,10 @@ main section .contenedor-musica {
 }
 
 
+/* FIN RESPONSIVE */
+
+
+/* BOTON HAMBURGUESA */
 /* NAV OCULTO */
 #hamburguesa {
     height: 100vh;
@@ -674,23 +753,166 @@ main section .contenedor-musica {
 }
 .menu-oculto {
     transform: translateX(100vw);
-   /*  transform: translateY(50%) translateX(50%); */
-    display: block;
-    
-    
-    
+    /* transition: 1s; */
+    display: block;  
 }
 .menu-activo {
     transform: translateX(0);
     background: rgb(240, 41, 55);
-    /* overflow-y:hidden; */   /* PORQUE NO FUNCIONA?????????????????????????????????????????????? */
-   overflow-y: hidden !important;
+    /* overflow-y: hidden !important; */
 }
 #hamburguesa i {
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 2%;
-    margin-top: 0.05%;    
+    margin-right: 3%;
+    margin-top: 0.02%;    
     cursor: pointer;
+}
+
+/* CONTENIDO NAV OCULTO */
+/* General */
+#contenedor-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-superior {
+    display: flex;    
+}
+.menu-superior .izquierda-20 {
+    flex: 20%;
+    height: 90vh;
+}
+.menu-superior .medio-40 {
+    flex: 40%;    
+    height: 90vh;
+}
+.menu-superior .derecha-40 {
+    flex: 40%;    
+    height: 90vh;
+}
+
+
+/* interior */
+    /* izq 20 */
+.menu-superior .izquierda-20 .brand h1 {
+    
+    font-size: 2em;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.menu-superior .izquierda-20 .ingresar h6 {
+    margin-left: 5%;
+    display: block;
+    margin-top: 98%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.menu-superior .izquierda-20 .registrarme a { 
+    text-decoration: none;
+}
+.menu-superior .izquierda-20 .registrarme a button {
+    background: #ffffff;
+    color:rgb(240, 41, 55);
+    font-weight: 600;
+    width: 250px;
+    height: 250px;
+    
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    font-size: 1.8em;
+    border: 0;
+    cursor: pointer;
+    transition: 1s transform, 1s font-weight, 1s font-size;
+    display: block;
+    margin: 0 auto;
+}
+.menu-superior .izquierda-20 .registrarme a button:hover {
+    transform: scale(0.9, 0.9);
+    transition-duration: 0.5s;  
+    font-weight: 600;
+    font-size: 1.9em;
+}
+
+/* medio-40 */
+.menu-superior .medio-40 .mi-cuenta h6 {
+    
+    display: block;
+    margin-top: 20%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+
+.menu-superior .medio-40 form label {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 500;
+
+}
+.menu-superior .medio-40 form input {
+    background: rgba(0,0,0,0.16);
+    width: 280px;
+    height: 50px;
+    border: 0;
+}
+.menu-superior .medio-40 form .boton-ingresar-cuenta {
+    background: rgba(0,0,0);
+    width: 120px;
+    height: 60px;
+    border: 0;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 5px;
+    cursor: pointer; 
+}
+
+input[type="checkbox" i] {
+    width: 15px !important;
+    height: 15px !important;
+}
+.menu-superior span {
+    color: black;
+    font-size: 1.5em;
+}
+
+/* derecha-40 */
+.menu-superior .derecha-40 .menu-principal h6 {
+    display: block;
+    margin-top: 3%;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.menu-superior .derecha-40 h3 {
+    display: block;
+    margin: 0;
+    font-size: 8em;
+   
+    font-weight: 400;
+}
+.menu-superior .derecha-40 a {
+    text-decoration: none;
+}
+
+
+/* FOOTER MENU OCULTO */
+.footer-menu {
+    width: 100%;
+    
+}
+.footer-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu ul li {
+    list-style: none;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500;
 }

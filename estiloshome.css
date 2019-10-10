@@ -7,7 +7,7 @@
     /* overflow-x: hidden; */
 }
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 body {
     margin: 0;
@@ -308,13 +308,18 @@ main section .contenedor-musica {
             .izquierda-foto .parrafos{     
                 display: flex;
                 padding-left: 25%;
+<<<<<<< Updated upstream
                 font-family: 'Roboto', sans-serif;
                 font-size: 1em;
+=======
+                
+>>>>>>> Stashed changes
             
             }
             .izquierda-foto p{
                 width: 50%;
                 margin: 1%;
+                
             }
             .izquierda-foto .inferior1 .parrafos a{
                 text-decoration: none;
@@ -343,7 +348,7 @@ main section .contenedor-musica {
             }
             .derecha-foto .texto2{
                 font-family: 'roboto';
-                font-size: 1em;
+                font-size: 1.5em;
                 margin: 1%;
                 
             }
@@ -362,9 +367,13 @@ main section .contenedor-musica {
 .contenedor-foto2 .caja1 p{
     color: grey;
     width: 20%;
+<<<<<<< Updated upstream
     font-family: 'roboto';
     font-size: 1em;
     font-weight: lighter;
+=======
+    font-size: 1.5em;
+>>>>>>> Stashed changes
     margin: 1%;
     
 }
@@ -477,10 +486,16 @@ main section .contenedor-musica {
     }
     .izquierda-foto .parrafos{
         flex-direction: column;
+<<<<<<< Updated upstream
         padding:0%;
+=======
+        padding-left:0% !important;
+
+>>>>>>> Stashed changes
     }
     .izquierda-foto .p{
         width: 100%;
+        
     }
     .caja1{
         flex-direction: column;
@@ -561,7 +576,12 @@ main section .contenedor-musica {
     .contenedor-musica {
         margin: 0 5%;
     }
+<<<<<<< Updated upstream
         
+=======
+    
+  
+>>>>>>> Stashed changes
     
 }
 
@@ -597,6 +617,8 @@ main section .contenedor-musica {
     nav {
         margin-bottom: 0;
     }
+
+    
 }
 
 @media (min-width: 800px) and (max-width: 1150px) {
@@ -695,7 +717,63 @@ main section .contenedor-musica {
     }
 }
 
+@media (max-width: 700px) {
+    .footer-menu ul li a {
+        font-size: 2em !important;
+    }
+    .menu-superior .derecha-40 {
+        display: none !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 .registrarme a button {
+        width: 140px !important;
+        height: 140px !important;
+       
+    }
+    input[type="checkbox" i] {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .menu-superior .medio-40 form .boton-ingresar-cuenta {
+        background: rgba(0,0,0);
+        width: 100px !important;
+        height: 50px !important;
+        border: 0;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer; 
+    }
+    .menu-superior .medio-40 form input[type="email" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior .medio-40 form input[type="password" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior{
+        margin: 0 3% !important;
+    }
+    .footer-menu ul {
+        flex-direction: column !important;
+        
+    }
+    .menu-superior .izquierda-20 {
+        height: 70vh !important;
+    }
+}
 
+/* FIN Hamburguesa RESPONSIVE */
 
 @media (min-width: 1150px) and (max-width: 1300px) {
 
@@ -777,11 +855,11 @@ main section .contenedor-musica {
 }
 .menu-superior .medio-40 {
     flex: 40%;    
-    height: 90vh;
+    
 }
 .menu-superior .derecha-40 {
     flex: 40%;    
-    height: 90vh;
+    
 }
 
 

@@ -739,6 +739,7 @@ main section .contenedor-musica {
     right: 0; 
    /*  transition: transform ease-out 700ms; */
     z-index: 4;
+    display: none;
 }
 .menu-oculto {
     transform: translateX(100vw);
@@ -749,6 +750,7 @@ main section .contenedor-musica {
     transform: translateX(0);
     background: rgb(240, 41, 55);
     /* overflow-y: hidden !important; */
+    display: block !important;
 }
 #hamburguesa i {
     position: absolute;
@@ -905,3 +907,4 @@ input[type="checkbox" i] {
     font-size: 2.5em;
     font-weight: 500;
 }
+

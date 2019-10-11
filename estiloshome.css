@@ -765,13 +765,14 @@ main section .contenedor-musica {
     }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 700px) {
+
+  
+
     .footer-menu ul li a {
-        font-size: 2em !important;
+        font-size: 1.8em !important;
     }
-    .footer-menu ul li a:hover {
-        color: white !important;
-    }
+    
     .menu-superior .derecha-40 {
         display: none !important;
     }
@@ -784,6 +785,7 @@ main section .contenedor-musica {
     .menu-superior .izquierda-20 .registrarme button {
         width: 140px !important;
         height: 140px !important;
+        
        
     }
     input[type="checkbox" i] {
@@ -792,7 +794,7 @@ main section .contenedor-musica {
     }
     .menu-superior .medio-40 form .boton-ingresar-cuenta {
         background: rgba(0,0,0);
-        width: 100px !important;
+        width: 140px !important;
         height: 50px !important;
         border: 0;
         color: white;
@@ -821,6 +823,75 @@ main section .contenedor-musica {
     }
     .menu-superior .izquierda-20 {
         height: 70vh !important;
+    }
+    .ingresar h6 {
+        margin-top: 40vh !important;
+    }
+}
+
+@media (max-width:400px) {
+    .izquierda-20 {
+        display: none !important;
+    }
+
+
+    .footer-menu ul li a {
+        font-size: 1.8em !important;
+    }
+    
+    .menu-superior .derecha-40 {
+        display: none !important;
+    }
+    .menu-superior .medio-40 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 {
+        flex: 50% !important;
+    }
+    .menu-superior .izquierda-20 .registrarme button {
+        width: 140px !important;
+        height: 140px !important;
+        
+       
+    }
+    input[type="checkbox" i] {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .menu-superior .medio-40 form .boton-ingresar-cuenta {
+        background: rgba(0,0,0);
+        width: 140px !important;
+        height: 50px !important;
+        border: 0;
+        color: white;
+        font-size: 1.5em;
+        padding-bottom: 5px;
+        cursor: pointer; 
+    }
+    .menu-superior .medio-40 form input[type="email" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior .medio-40 form input[type="password" i] {
+        background: rgba(0,0,0,0.16);
+        width: 200px;
+        height: 40px;
+        border: 0;
+    }
+    .menu-superior{
+        margin: 0 3% !important;
+    }
+    .footer-menu ul {
+        flex-direction: column !important;
+        
+    }
+    .menu-superior .izquierda-20 {
+        height: 70vh !important;
+    }
+    .ingresar h6 {
+        margin-top: 40vh !important;
     }
 }
 
@@ -1228,14 +1299,14 @@ header {
         font-size: 1.3em; 
     }
     .m_caja2izq_containerheader {
-        flex: 50%;
+        flex: 50% !important;
     }
     .m_caja5dere_containerheader {
-        flex: 50%;
+        flex: 50% !important;
         background: white;
     }
     .mtextocerati{
-        font-size: 2.2em;
+        font-size: 2em;
     }
     .mbienvenidos {
         display: none;
@@ -1249,6 +1320,9 @@ header {
     }
     .m_caja6dere_containerheader h2 {
         display: none;
+    }
+    .mbeatles {
+        font-size: 3em;
     }
 }
 

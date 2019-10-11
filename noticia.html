@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,83 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilosnoticia.css">
     <link rel="stylesheet" href="estiloshome.css">
+    <link rel="stylesheet" href="animate.css">
+
+    
 </head>
 <body>
-        <nav>
-            <div>
-                <ul>
-                    <li><a href="index.html"><b>Pong Cultural</b></a></li>
-                    <li class="secciones"><a href="">Música</a></li>
-                    <li class="secciones"><a href="">Literatura</a></li>
-                    <li class="secciones"><a href="">Fotografía</a></li>
-                    <li>
-                        <label>
-                            <button style="cursor: pointer"></button>
-                        </label>
-                    </li>
-                </ul>
+
+    <!-- NAV -->
+    <nav>
+        <div>
+            <ul>
+                <li><a href="index.html"><b>Pong Cultural</b></a></li>
+                <li class="secciones"><a href="">Música</a></li>
+                <li class="secciones"><a href="">Literatura</a></li>
+                <li class="secciones"><a href="">Fotografía</a></li>
+                <li>
+                    <label>
+                        <button onClick="mostrarmenu()"></button>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAV OCULTO -->
+    <div id="hamburguesa" class="menu-oculto" >        
+        <i class="fa fa-times fa-5x" onClick="ocultarmenu()"></i>
+        <div id="contenedor-menu">
+            <div class="menu-superior"> 
+
+                <div class="izquierda-20">
+                    <div class="brand"><h1>Pong Cultural</h1></div>
+                    <div class="ingresar"><h6>Ingresar</h6></div>
+                    <div class="registrarme"><button>Registrate</button></div>
+                </div>
+
+                <div class="medio-40">
+                    <div class="mi-cuenta"><h6>Mi cuenta</h6></div>
+                    <div class="formulario-menu">
+                        <form action="post">
+                            <div>
+                                <label for="email">Email:</label>
+                                <input id="email" type="email" name="email">
+                                <br>
+                                <label for="password">Password:</label>
+                                <input id="password" type="password" name="pass" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+                            </div>
+                            
+                            <div class="boton-login">
+                                <input type="checkbox" name="Agree" required=""> <span>Recordar</span> 
+                                <br>
+                                <button class="boton-ingresar-cuenta">Ingresar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="derecha-40">
+                    <div class="contenedor-mas-contenido">
+                        <div class="menu-principal"><h6>Menu principal</h6></div>
+                        <div class="conocenos"><a href=""><h3>Conocenos</h3></a></div>
+                        <div class="contacto"><a href=""><h3>Contacto</h3></a></div>
+                        <div class="mas"><a href=""><h3>Más</h3></a></div>
+                    </div>    
+                </div>
+
             </div>
-        </nav>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="">Música</a></li>
+                    <li><a href="">Literatura</a></li>
+                    <li><a href="">Fotografía</a></li>
+                </ul>
+            </div> 
+        </div>
+
+        
+    </div>
+    <!-- FIN - NAV OCULTO -->
 
 <!-- CONTENEDOR DE LO PRINCIPAL -->
     <main class="contenedor-noticia">
@@ -96,7 +156,62 @@
 
     </main>
 <!-- FIN - CONTENEDOR DE LO PRINCIPAL -->
+<br>
+<br>
+<hr>
+    <footer>
+        
+        <div class="foot-div-1">
+          
+                <h3>Links Rapidos</h3>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="">Send a Note</a></li>
+                </ul>
+        </div>
+            
+        <div class="foot-div-2">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twiter</a></li>
+                </ul>
+        </div>
 
+        <div class="foot-div-3">
+               
+            
+            
+        </div>
+
+        <div class="foot-div-4">
+            <h3>Newslatter</h3>
+            <div>
+                    <input type="text" placeholder="Email adress" name="mail" required>
+                    <input class="boton-submit" type="submit" value="subscribe">
+            </div>
+           
+        </div>
+
+
+    </footer>
+
+
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="jshome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+<script>
+    new TypeIt('.subtitulo', {
+  strings: "Magia y Surrealismo fotógrafico"
+}).go(); 
+</script>
+   
+   
 
 </body>
 </html>

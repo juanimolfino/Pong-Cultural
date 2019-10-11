@@ -603,6 +603,13 @@ main section .contenedor-musica {
     .contenedor-musica {
         margin: 0 5%;
     }
+    nav div {
+        width: 100vw;
+        margin: 0;
+    }
+    nav div ul {
+        margin: 0 2%;
+    }
 
 }
 

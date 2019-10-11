@@ -2,9 +2,9 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 * {
     font-size: 14px;
-    font-family: Darker Grotesque;
+    font-family: 'Darker Grotesque', sans-serif;  
     color: rgba(0, 0, 0, 0.85);
-    /* overflow-x: hidden; */
+    
 }
 html {
     overflow-x: hidden !important;
@@ -15,17 +15,16 @@ body {
 }
 .htmlclass {
     overflow-y: hidden;
-    /* overflow-x: hidden; */
+    
 }
 
-
 /* NAV */
-
 /* BOTON hamburguesa */
 nav div ul li button {
    background: transparent;
    border: 0;
-   margin-top: 5px;   
+   margin-top: 5px;
+   cursor: pointer; 
 }
 nav div ul li button::before {
    background: transparent;
@@ -39,7 +38,7 @@ nav div ul li button::before {
 nav div ul li button:hover::before {
     color: rgb(240, 41, 55);
 }
-/* FIN BOTON */
+/* FIN BOTON HAMBURGUESA */
 
 
 .contenedor-musica {
@@ -47,7 +46,7 @@ nav div ul li button:hover::before {
 }
 
 
-/* SECCIONES */
+/* SECCIONES NAV*/
 nav div ul li a b {
     text-decoration: none;
     color: black;
@@ -75,7 +74,7 @@ nav div ul {
     margin-top: 3px;
     margin-bottom: 5px;
 }
-/* FIN SECCIONES */
+/* FIN SECCIONES NAV*/
 
 
 /* NAV GENERAL */
@@ -134,6 +133,10 @@ nav {
 
 
 /* SECCION MUSICA - GENERAL */
+main {
+    margin-top: 100px;
+}
+
 main section .contenedor-musica {
     display: block;
 }
@@ -157,7 +160,7 @@ main section .contenedor-musica {
     flex-wrap: wrap;
 }
 
-
+/* MUSICA INTERIOR */
 /* ARTICULO TITULO SECCION (60% BLOQUE 1)*/
 .titulo h1{
     font-size: 15em;
@@ -248,10 +251,11 @@ main section .contenedor-musica {
 }
 
 /* FIN NOTICIA SESENTA ABAJO */
+/* FIN INTERIOR MUSICA */
+
 
 /* SECCION FOTOGRAFIA */
 
-/* foto LARA-----------------------------------*/
 .section-foto{
     margin-top: 100px;
     margin-left: 2%;
@@ -452,6 +456,8 @@ main section .contenedor-musica {
     footer .foot-div-3{
         background-image: url(imagenes/logopongweb.jpg);
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         width: 9.8%;
         background-color: rgb(116, 114, 114);
         padding: 0%;
@@ -480,11 +486,11 @@ main section .contenedor-musica {
 
   
 
-/*fin seccion fotografia lara--------------------*/
+/*fin seccion fotografia/
 
 
 /* RESPONSIVE */
-/*responsive lara-------*/
+/*FOTOGRAFIA*/
 
 @media (max-width: 700px){
     .contenedor-foto1{
@@ -521,6 +527,7 @@ main section .contenedor-musica {
     .contenedor-foto2 button{
         width:100px;
         height: 100px;
+        font-size: 1.2em !important;
     }
     .contenedor-foto2 .caja1 p{
         width: 100% !important;
@@ -540,11 +547,10 @@ main section .contenedor-musica {
     
 }
 
+/*fin responsive FOTOGRAFIA*/
 
 
-/*fin responsive lara*/
-
-/* RESPONSIVE JUANI */
+/* RESPONSIVE MUSICA */
 @media (max-width: 700px) {
     .bloque {
         flex-direction: column;
@@ -663,14 +669,41 @@ main section .contenedor-musica {
         margin-top: 0;
     }
 
-    
-
 }
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+
+    .noticia-sesenta {
+        flex-direction: column;
+        margin: 0;
+    }
+    .noticia-sesenta .info-noticia {
+        flex-direction: row;
+    }
+    
+    .cuarenta .info-noticia {
+        margin: 0;
+        padding: 0;
+        align-self: flex-start;
+    }
+  
+    .cuarenta .imagen-noticia {
+        margin: auto 0;
+    }
+    
+    .sesenta .imagen-noticia {
+        margin: 0 auto;
+    }
+    .titulo h1 {
+        margin: 0;
+    }
+}
+
 
 /* hamburguesa  RESPONSIVE*/
 
 @media (min-width: 900px) and (max-width: 1024px) {
-    .menu-superior .izquierda-20 .registrarme a button {
+    .menu-superior .izquierda-20 .registrarme button {
         width: 200px !important;
         height: 200px !important;
     }
@@ -703,7 +736,7 @@ main section .contenedor-musica {
         font-size: 2em !important;
         
     }
-    .menu-superior .izquierda-20 .registrarme a button {
+    .menu-superior .izquierda-20 .registrarme button {
         width: 150px !important;
         height: 150px !important;
     }
@@ -736,6 +769,9 @@ main section .contenedor-musica {
     .footer-menu ul li a {
         font-size: 2em !important;
     }
+    .footer-menu ul li a:hover {
+        color: white !important;
+    }
     .menu-superior .derecha-40 {
         display: none !important;
     }
@@ -745,7 +781,7 @@ main section .contenedor-musica {
     .menu-superior .izquierda-20 {
         flex: 50% !important;
     }
-    .menu-superior .izquierda-20 .registrarme a button {
+    .menu-superior .izquierda-20 .registrarme button {
         width: 140px !important;
         height: 140px !important;
        
@@ -790,39 +826,12 @@ main section .contenedor-musica {
 
 /* FIN Hamburguesa RESPONSIVE */
 
-@media (min-width: 1150px) and (max-width: 1300px) {
-
-    .noticia-sesenta {
-        flex-direction: column;
-        margin: 0;
-    }
-    .noticia-sesenta .info-noticia {
-        flex-direction: row;
-    }
-    
-    .cuarenta .info-noticia {
-        margin: 0;
-        padding: 0;
-        align-self: flex-start;
-    }
-  
-    .cuarenta .imagen-noticia {
-        margin: auto 0;
-    }
-    
-    .sesenta .imagen-noticia {
-        margin: 0 auto;
-    }
-    .titulo h1 {
-        margin: 0;
-    }
-}
-
-
 /* FIN RESPONSIVE */
 
 
-/* BOTON HAMBURGUESA */
+
+
+/* BOTON HAMBURGUESA MENU OCULTO*/
 /* NAV OCULTO */
 #hamburguesa {
     height: 100vh;
@@ -842,7 +851,6 @@ main section .contenedor-musica {
 .menu-activo {
     transform: translateX(0);
     background: rgb(240, 41, 55);
-    /* overflow-y: hidden !important; */
     display: block !important;
 }
 #hamburguesa i {
@@ -894,10 +902,9 @@ main section .contenedor-musica {
     font-size: 1.3em;
     margin-bottom: 5px;
 }
-.menu-superior .izquierda-20 .registrarme a { 
-    text-decoration: none;
-}
-.menu-superior .izquierda-20 .registrarme a button {
+
+
+.menu-superior .izquierda-20 .registrarme button {
     background: #ffffff;
     color:rgb(240, 41, 55);
     font-weight: 600;
@@ -915,7 +922,7 @@ main section .contenedor-musica {
     display: block;
     margin: 0 auto;
 }
-.menu-superior .izquierda-20 .registrarme a button:hover {
+.menu-superior .izquierda-20 .registrarme button:hover {
     transform: scale(0.9, 0.9);
     transition-duration: 0.5s;  
     font-weight: 600;
@@ -999,5 +1006,249 @@ input[type="checkbox" i] {
     text-decoration: none;
     font-size: 2.5em;
     font-weight: 500;
+}
+.footer-menu ul li a:hover {
+   color: white;
+}
+
+
+
+
+/* BANNER PARTE PRINCIPAL DEL INDEX */
+.m_containerheader {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_caja1izq_containerheader
+{
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    flex: 30%;
+    border: 0.5px solid black;
+    line-height: 0.5em; 
+}
+.bloque1 {
+    font-size:4em; 
+    line-height: 1em;
+    padding: 2%;
+}
+.bloque2 {
+    font-size:2em;
+    line-height: 1em; 
+    padding: 2%; 
+}
+
+.bloque3 {
+    font-size:4em;
+    line-height: 1em; 
+    padding: 2%; 
+    margin: 0;  
+}
+.bloque3 h4 {
+    
+    display: block;
+    margin: 0 auto; 
+}
+
+.m_bochadecajas {
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.m_containerarriba {
+    height: 250px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_caja2izq_containerheader {
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(240, 41, 55);
+    color: white;
+    flex: 50%;
+    line-height: 4em; 
+}
+
+.m_caja3izq_containerheader {
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    flex: 25%;
+    border: 0.5px solid black;
+    border right: none;
+    border-left: none;
+}
+
+.m_caja4_containerheader {
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    flex:25%;
+    border: 0.5px solid black;
+}
+
+.mtextoleguas {
+    font-size: 2em;  
+    line-height: 1em; 
+    text-align: left;
+    padding: 2%;
+}
+
+.m_caja5dere_containerheader {
+
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color:#000000;
+    text-align: center;
+    flex: 25%;
+    border: 0.5px solid black;
+ }
+
+ .mbeatles {
+    font-size: 5em;
+ }
+
+.m_caja6dere_containerheader {
+    width: 75%;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    border: 0.5px solid black;
+    border-left: none;
+    font-size: 3em; 
+}
+.m_caja6dere_containerheader h2{
+    
+    font-size: 1.8em; 
+}
+
+.m_containerabajo {
+    height: 250px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.m_containerheader h2 {
+    margin: 0;
+}
+
+.gatito {
+    display:block;  
+    margin: 0 auto;
+}
+
+.mtextocerati {
+    font-size: 3em;
+    padding: 10px;
+}
+
+
+.mtextoanita {
+    font-size: 2em; 
+    line-height: 1em; 
+    text-indent: 2em; 
+}
+
+.mbienvenidos {
+    font-size: 1em; 
+    padding: 10px;
+}
+header {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 80px;
+}
+
+/* RESPONSIVE BANNER */
+
+@media (min-width: 900px) and (max-width: 1150px) {
+
+.m_caja1izq_containerheader {
+    display: none;
+}
+
+.m_bochadecajas {
+    flex: 100%;
+    border: 0.5px solid black;
+}
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+
+    .m_caja4_containerheader {
+        display: none;
+    }
+    .m_caja1izq_containerheader {
+        display: none;
+    }
+    
+    .m_bochadecajas {
+        flex: 100%;
+        border: 0.5px solid black;
+    }
+    .m_caja6dere_containerheader h2{
+    
+        font-size: 1.3em; 
+    }
+}
+
+@media (max-width: 700px) {
+
+    .m_caja4_containerheader {
+        display: none;
+    }
+    .m_caja1izq_containerheader {
+        display: none;
+    }
+    
+    .m_bochadecajas {
+        flex: 100%;
+        border: 0.5px solid black;
+    }
+    .m_caja6dere_containerheader h2{
+    
+        font-size: 1.3em; 
+    }
+    .m_caja2izq_containerheader {
+        flex: 50%;
+    }
+    .m_caja5dere_containerheader {
+        flex: 50%;
+        background: white;
+    }
+    .mtextocerati{
+        font-size: 2.2em;
+    }
+    .mbienvenidos {
+        display: none;
+    }
+    .gatito {
+        margin-top: 20%;
+    }
+    .m_caja6dere_containerheader {
+        width: 50% !important;
+        background: black;
+    }
+    .m_caja6dere_containerheader h2 {
+        display: none;
+    }
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="html">
+<html lang="es" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,23 @@
     <title>Pong Cultural</title>
     <link rel="stylesheet" href="estiloshome.css">
     <link rel="stylesheet" href="animate.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    
+     
 </head>
 <body> 
-
-       
+  
     <!-- BARRA NAVEGACION - JUANI -->
     <nav>
         <div>
             <ul>
                 <li><a href="index.html"><b>Pong Cultural</b></a></li>
-                <li class="secciones"><a href="">Música</a></li>
+                <li class="secciones"><a href="#spinetta">Música</a></li>
                 <li class="secciones"><a href="">Literatura</a></li>
-                <li class="secciones"><a href="">Fotografía</a></li>
+                <li class="secciones"><a href="#foto">Fotografía</a></li>
                 <li>
                     <label>
-                        <button style="cursor: pointer" onClick="mostrarmenu()"></button>
+                        <button onClick="mostrarmenu()"></button>
                     </label>
                 </li>
             </ul>
@@ -41,13 +38,13 @@
                 <div class="izquierda-20">
                     <div class="brand"><h1>Pong Cultural</h1></div>
                     <div class="ingresar"><h6>Ingresar</h6></div>
-                    <div class="registrarme"><a href=""><button>Registrate</button></a></div>
+                    <div class="registrarme"><button>Registrate</button></div>
                 </div>
 
                 <div class="medio-40">
                     <div class="mi-cuenta"><h6>Mi cuenta</h6></div>
                     <div class="formulario-menu">
-                        <form action="">
+                        <form action="post">
                             <div>
                                 <label for="email">Email:</label>
                                 <input id="email" type="email" name="email">
@@ -57,7 +54,7 @@
                             </div>
                             
                             <div class="boton-login">
-                                <input type="checkbox" name="Agree" required=""> <span>Recordar</span> 
+                                <input type="checkbox" name="Agree" required=""> <span>Acepto terminos y condiciones</span> 
                                 <br>
                                 <button class="boton-ingresar-cuenta">Ingresar</button>
                             </div>
@@ -77,201 +74,233 @@
             </div>
             <div class="footer-menu">
                 <ul>
-                    <li><a href="">Música</a></li>
+                    <li><a href="#spinetta">Música</a></li>
                     <li><a href="">Literatura</a></li>
-                    <li><a href="">Fotografía</a></li>
+                    <li><a href="#foto">Fotografía</a></li>
                 </ul>
             </div> 
-        </div>
-
-        
+        </div>     
     </div>
     <!-- FIN - NAV OCULTO -->
-
-
-
-
     <!-- FIN BARRA NAVEGACION -->
+
 
     <!-- HEADER / BANNER - MARIETTA -->
     <header>
-
+        <div class="m_containerheader">
+    
+            <div class="m_caja1izq_containerheader">
+                <h2 class="bloque1">0.4</h2>
+                <h3 class="bloque2">
+                    Al primer signo de juego o de truco
+                    en una narración, sea trivial o
+                    elaborado, cierro el libro.
+                </h3>
+                <h4 class="bloque3">Raymond Carver</h4>
+            </div>
+    
+            <div class="m_bochadecajas">
+                <div class="m_containerarriba">
+                    <div class="m_caja2izq_containerheader">
+                            <h2 class="mtextocerati">
+                            #SEGUIR
+                            <br> VIVIENDO
+                            <br> SIN TU AMOR.</h2>
+                    </div>
+    
+                    <div class="m_caja4_containerheader">
+                        <h2 class="mtextoleguas">
+                        20.000
+                        <br>leguas
+                        <br>de
+                        <br>viaje
+                        <br>submarino.
+                    </div>
+    
+                    <div class="m_caja5dere_containerheader">
+                        <h2 class="mbeatles">beatles.</h2> 
+                    </div>
+                </div>
+    
+                <div class="m_containerabajo">
+    
+                    <div class="m_caja3izq_containerheader">
+                            <h2 class="mbienvenidos">*bienvenidos*</h2>
+                            <img class="gatito" src="imagenes\logopongweb.jpg">
+                    </div>
+    
+                    <div class="m_caja6dere_containerheader">
+                            <h2 class="mtextoanita">ANNABERKOZ / #fantástico.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- FIN HEADER / BANNER -->
 
     <!-- MAIN CON SECCIONES Y ARTICULOS - 1 C/U -->
     <main>
     <!-- JUANI MUSICA -->
-        <section>
-            <div class="contenedor-musica">
+            <section>
+                <div class="contenedor-musica">
 
-                <div class="bloque">
-                    <article class="sesenta">
-                        <div class="titulo"  data-aos="fade-up"><h1>Música</h1></div>
-                        <div class="contenedor-comentario">                 
-                            <div class="comentario">
-                                <p>"El mensaje es ese, cuidá al que tenes al lado. Es tu amigo, puede ser tu hermano, tu novia... lo que sea pero cuidá, cuidá la vida."</p>
-                                <p class="by">-- Luis Alberto Spinetta</p>
-                            </div>  
-                        </div>
+                    <div class="bloque">
+                        <article class="sesenta">
+                            <div class="titulo"  data-aos="fade-up"><h1 id="spinetta">Música</h1></div>
+                            <div class="contenedor-comentario">                 
+                                <div class="comentario">
+                                    <p>"El mensaje es ese, cuidá al que tenes al lado. Es tu amigo, puede ser tu hermano, tu novia... lo que sea pero cuidá, cuidá la vida."</p>
+                                    <p class="by">-- Luis Alberto Spinetta</p>
+                                </div>  
+                            </div>
 
-                        <div class="boton-conocer" data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="1000">
-                            <button>Conocer más</button>
-                            <div class="invisible"></div>
-                        </div>                
-                    </article>
-                    
-                    <article class="cuarenta">
-                        <div class="imagen-noticia">
-                            <img src="imagenes/abbey_road_600px.jpg" alt="Noticia The Beatles">
-                        </div>
-                        <div class="info-noticia">    
-                            <div>
-                                <a href=""><p class="titulo-noticia">
-                                        50 años de 'Abbey Road': la intimidad de la grabación de la última obra maestra de los Beatles
-                                </p></a>                                
-                            </div>
-                            <div>
-                                <p class="extra-noticia">
-                                        Los Beatles en abril de 1969, antes del comienzo de las sesiones de Abbey Road Crédito: Gentileza EMI
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-
-                <div class="bloque">    
-                    <article class="cuarenta">
-                        <div class="imagen-noticia">
-                                <img src="imagenes/cerati_600px.jpg" alt="Noticia Cerati">
-                        </div>
-                        <div class="info-noticia">    
-                            <div> 
-                                <a href=""><p class="titulo-noticia" data-aos="fade-right">
-                                    13 años de 'Ahi vamos': adentro de la grabación del último disco de Gustavo Cerati
-                                </p></a>
-                                
-                            </div>
-                            <div>
-                                <p class="extra-noticia">
-                                        "Separarse de la especie
-                                        por algo superior
-                                        no es soberbia, es amor."
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="sesenta">
-                        <div class="noticia-sesenta">
+                            <div class="boton-conocer" data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="1000">
+                                <button>Conocer más</button>
+                                <div class="invisible"></div>
+                            </div>                
+                        </article>
+                        
+                        <article class="cuarenta">
                             <div class="imagen-noticia">
-                                    <img src="imagenes/spinetta_3_400px.jpg" alt="Noticia Spinetta">
+                                <img src="imagenes/abbey_road_600px.jpg" alt="Noticia The Beatles">
                             </div>
                             <div class="info-noticia">    
                                 <div>
-                                    <a href="noticia.html"><p class="titulo-noticia" data-aos="fade-left">
-                                            Las primeras imágenes inéditas de Spinetta en el documental de National Geographic
-                                    </p></a>
+                                    <a href=""><p class="titulo-noticia">
+                                            50 años de 'Abbey Road': la intimidad de la grabación de la última obra maestra de los Beatles
+                                    </p></a>                                
                                 </div>
                                 <div>
                                     <p class="extra-noticia">
-                                            Vera Spinetta, confiesa que no solía escuchar la música de su padre y que, hasta que escuchó por primera vez El jardín de los presentes: "Era lo más lindo que había escuchado en mi vida.Y era mi papá el que cantaba".
+                                            Los Beatles en abril de 1969, antes del comienzo de las sesiones de Abbey Road Crédito: Gentileza EMI
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
-            </div>            
-        </section>
+                        </article>
+                    </div>
+
+
+                    <div class="bloque">    
+                        <article class="cuarenta">
+                            <div class="imagen-noticia">
+                                    <img src="imagenes/cerati_600px.jpg" alt="Noticia Cerati">
+                            </div>
+                            <div class="info-noticia">    
+                                <div> 
+                                    <a href=""><p class="titulo-noticia" data-aos="fade-right">
+                                        13 años de 'Ahi vamos': adentro de la grabación del último disco de Gustavo Cerati
+                                    </p></a>
+                                    
+                                </div>
+                                <div>
+                                    <p class="extra-noticia">
+                                            "Separarse de la especie
+                                            por algo superior
+                                            no es soberbia, es amor."
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="sesenta">
+                            <div class="noticia-sesenta">
+                                <div class="imagen-noticia">
+                                        <img src="imagenes/spinetta_3_400px.jpg" alt="Noticia Spinetta">
+                                </div>
+                                <div class="info-noticia">    
+                                    <div>
+                                        <a href="noticia.html"><p class="titulo-noticia" data-aos="fade-left">
+                                                Las primeras imágenes inéditas de Spinetta en el documental de National Geographic
+                                        </p></a>
+                                    </div>
+                                    <div>
+                                        <p class="extra-noticia">
+                                                Vera Spinetta, confiesa que no solía escuchar la música de su padre y que, hasta que escuchó por primera vez El jardín de los presentes: "Era lo más lindo que había escuchado en mi vida.Y era mi papá el que cantaba".
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>            
+            </section>
     <!-- FIN MUSICA -->
     
 
-
-    <!-- MARIETTA LITERATURA -->
-        <section>
-            <article></article>
-            <article></article>
-           
-        </section>
-    <!-- FIN LITERATURA --> 
-
     <!-- LARA FOTOGRAFIA -->
-    <section class="section-foto">
-        <div class="contenedor-foto1">
-
-            <div class="izquierda-foto">
-                <div class="superior1">
-                    
-                    <div class="wow bounceInUp">Foto</div>
-                </div>
-                <div class="inferior1">
-                    <div class="subtitulo"> Grandes Fotógrafos: Anna Berkoz: 
-                    </div>
-                    
-                    <div class="parrafos">
-                        <p> <a href="#">Recordando a Chris Hondros</a>, fotógrafo de guerra de la agencia Getty, 
-                            murió en la madrugada del jueves al viernes por las heridas causadas en un enfrentamiento entre rebeldes 
-                            y fuerzas de Gadafi en Misrata. Como consecuencia del mismo ataque había fallecido también, unas horas antes, 
-                            el fotógrafo Tim Hetherington. 
-                            En la misma guerra, en la misma escaramuza, se van dos de los mejores fotógrafos de guerra actuales.</p>
-                        <p>La Federación Española de Profesionales de la Fotografía y de la Imagen ha anunciado las nominaciones para 'mejor fotógrafo del año 2018', 
-                            entre los que se encuentra la fotógrafa argentina, afincada en Talavera de a Reina, 
-                            Valeria Cassina.</p>
-                    
+            <section class="section-foto">
+                <div class="contenedor-foto1">
+                    <div class="izquierda-foto">
+                        <div class="superior1">
+                            <div class="wow bounceInUp" id="foto">Foto</div>
                         </div>
-                   
+                        <div class="inferior1">
+                            <div class="subtitulo"> Grandes Fotógrafos: Anna Berkoz: 
+                        </div>
+                        
+                        <div class="parrafos">
+                            <p> 
+                                <a href="#">Recordando a Chris Hondros</a>, fotógrafo de guerra de la agencia Getty, 
+                                murió en la madrugada del jueves al viernes por las heridas causadas en un enfrentamiento entre rebeldes 
+                                y fuerzas de Gadafi en Misrata. Como consecuencia del mismo ataque había fallecido también, unas horas antes, 
+                                el fotógrafo Tim Hetherington. 
+                                En la misma guerra, en la misma escaramuza, se van dos de los mejores fotógrafos de guerra actuales.
+                            </p>
+                            <p>
+                                La Federación Española de Profesionales de la Fotografía y de la Imagen ha anunciado las nominaciones para 'mejor fotógrafo del año 2018', 
+                                entre los que se encuentra la fotógrafa argentina, afincada en Talavera de a Reina, 
+                                Valeria Cassina.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="derecha-foto">
+                <div class="derecha-foto">
                     <div class="superior2">
                         <img src="imagenes/yousuf.jpg" alt="">
                     </div>
                     <div class="inferior2">
                         <div class="texto1">toushar</div>
-                        <div class="texto2">Tushar is recognized as one of the leading freelance documentary 
+                        <div class="texto2">
+                            Tushar is recognized as one of the leading freelance documentary 
                             photographer in Dhaka Bangladesh.  
-                            </div>
-                    </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        
+            <div class="contenedor-foto2">
+                <div class="caja1">
+                    <button>Hire talent today!</button>
+                    <h2>
+                        Siempre es bonito que te reconozcan el trabajo, en esta caso  
+                        tenemos Otra fotografía seleccionada en los premios WPS
+                        </h2>
+                    <p>
+                        La plataforma internacional de fotógrafos de boda Wedding Photography Select nos ha 
+                        seleccionado otra imagen en su selección 23, otras veces ya nos 
+                        galardonaron con otros premios hay que considerar y esto nos lo 
+                        dicen desde este directorio que las imágenes seleccionadas no superan 
+                        el diez por ciento de las imágenes que han entrado a concurso, así que estamos 
+                        otra vez emocionados con esta nueva prueba que nos promulgan, 
+                        esto nos da un pequeño empujón de ánimo otra vez.
+                    </p>
+                </div>
                 
             </div>
-
-        </div>
-
-        
-        
-    
-    <div class="contenedor-foto2">
-         <div class="caja1">
-             <button>Hire talent today!</button>
-             <h2>Siempre es bonito que te reconozcan el trabajo, en esta caso  
-                    tenemos Otra fotografía seleccionada en los premios WPS</h2>
-             <p>    La plataforma internacional de fotógrafos de boda Wedding Photography Select nos ha 
-                    seleccionado otra imagen en su selección 23, otras veces ya nos 
-                    galardonaron con otros premios hay que considerar y esto nos lo 
-                    dicen desde este directorio que las imágenes seleccionadas no superan 
-                    el diez por ciento de las imágenes que han entrado a concurso, así que estamos 
-                    otra vez emocionados con esta nueva prueba que nos promulgan, 
-                    esto nos da un pequeño empujón de ánimo otra vez.</p>
-            </div>
-        
-        </div>
-</section>
-    <!-- FIN FOTOGRAFIA -->
+        </section>
+<!-- FIN FOTOGRAFIA -->
     </main>
 
+<!-- FOOTER -->
 <br>
 <br>
 <hr>
     <footer>
-        
         <div class="foot-div-1">
-          
                 <h3>Links Rapidos</h3>
                 <ul>
                     <li><a href="#">Log In</a></li>
@@ -289,10 +318,7 @@
                 </ul>
         </div>
 
-        <div class="foot-div-3">
-               
-            
-            
+        <div class="foot-div-3"> 
         </div>
 
         <div class="foot-div-4">
@@ -306,8 +332,9 @@
 
 
     </footer>
+<!-- FIN FOOTER -->
 
-
+<!-- SCRIPTS -->
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

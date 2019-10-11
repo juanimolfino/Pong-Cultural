@@ -403,14 +403,14 @@ main section .contenedor-musica {
         border: 0px;
         background: red;
         color: white;
-        
+        transition: 1s transform, 1s font-size;
       
         
     }
     .contenedor-foto2 button:hover{
         transform: scale(0.7,0.7);
         transition: 1s;
-        font-size: 2em;
+        font-size: 2.2em;
         
     }
 
